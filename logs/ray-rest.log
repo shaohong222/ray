@@ -1,0 +1,31 @@
+2017-11-15 17:19:33.282  INFO 9324 --- [main] com.shao.ray.rest.RayRestApplication     : Starting RayRestApplication on MS-20160616DIPX with PID 9324 (D:\Users\Administrator\IdeaProjects\ray\ray-rest\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\ray)
+2017-11-15 17:19:33.285  INFO 9324 --- [main] com.shao.ray.rest.RayRestApplication     : No active profile set, falling back to default profiles: default
+2017-11-15 17:19:33.370  INFO 9324 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c419631: startup date [Wed Nov 15 17:19:33 GMT+08:00 2017]; root of context hierarchy
+2017-11-15 17:19:35.363  INFO 9324 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2017-11-15 17:19:35.371  INFO 9324 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-11-15 17:19:35.372  INFO 9324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-15 17:19:35.447  INFO 9324 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-15 17:19:35.447  INFO 9324 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2082 ms
+2017-11-15 17:19:35.579  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-15 17:19:35.583  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-15 17:19:35.584  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-15 17:19:35.584  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-15 17:19:35.584  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-15 17:19:35.584  INFO 9324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'jwtAuthenticationTokenFilter' to: [/*]
+2017-11-15 17:19:36.313  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c419631: startup date [Wed Nov 15 17:19:33 GMT+08:00 2017]; root of context hierarchy
+2017-11-15 17:19:36.347  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/auth]}" onto public org.springframework.http.ResponseEntity<?> com.shao.ray.rest.modular.auth.controller.AuthController.createAuthenticationToken(com.shao.ray.rest.modular.auth.controller.dto.AuthRequest)
+2017-11-15 17:19:36.348  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public org.springframework.http.ResponseEntity com.shao.ray.rest.modular.example.ExampleController.hello(com.shao.ray.rest.common.SimpleObject)
+2017-11-15 17:19:36.349  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/global/error]}" onto public java.lang.String com.shao.ray.core.base.controller.GlobalController.errorPage()
+2017-11-15 17:19:36.349  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/global/sessionError]}" onto public java.lang.String com.shao.ray.core.base.controller.GlobalController.errorPageInfo(org.springframework.ui.Model)
+2017-11-15 17:19:36.350  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-15 17:19:36.351  INFO 9324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-15 17:19:36.365  INFO 9324 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-15 17:19:36.365  INFO 9324 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-15 17:19:36.375  INFO 9324 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2017-11-15 17:19:36.388  INFO 9324 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-15 17:19:36.517  INFO 9324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-15 17:19:36.574  INFO 9324 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2017-11-15 17:19:36.578  INFO 9324 --- [main] com.shao.ray.rest.RayRestApplication     : Started RayRestApplication in 3.562 seconds (JVM running for 4.407)
+2017-11-15 17:20:37.464  INFO 9324 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-15 17:20:37.464  INFO 9324 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-15 17:20:37.475  INFO 9324 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
